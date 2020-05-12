@@ -1,0 +1,87 @@
+.<!doctype html>
+<html lang="en">
+  <head>
+    <title>Product-Detail</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="animate.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  </head>
+  <body>
+    
+      <section class="lol">
+        <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="card">
+  
+
+                    <img src="https://www.shopmefast.com/pub/media/catalog/product/cache/a658952d6a165596dac967950ab0a67c/m/h/mh-016-marble-lotta-1n.jpg" class="foto rounded-circle wow animated zoomIn">
+                     <h4 class="py-5 wow animated slideInLeft" style="color: #eee;">About this product:</h4>
+                    </div>
+                </div>
+              
+              <div class="col details">
+                  
+                <h1 class="text-center shadow wow animated slideInUp" style="color: #eee;background-color:#993366">Godess Decor</h1>
+                <p class="text-center wow animated slideInRight" style="color: #eee; font-size:20px;">price: 700&#8377;</p>
+                <p class="text-center wow animated slideInRight" style="color: #eee;">rating_system</p>
+                <p class="text-center wow animated slideInRight" style="color: #eee;">free delivery on orders over &#8377;500.00</p>
+                <p class="text-center wow animated slideInRight" style="color: #eee;">You Save: &#8377;100.00 (20%)<br>Inclusive of all taxes.</p>
+                <p class="text-center wow animated slideInRight" style="color: #eee;"><img src="https://img.icons8.com/wired/40/000000/circled-left.png"/>Returnable<img src="https://img.icons8.com/ios-filled/40/000000/thick-vertical-line.png"/><img src="https://img.icons8.com/wired/40/000000/delivery.png"/>Free Delivery<br>In Stock</p>
+                <p class="text-center wow animated slideInRight" style="color: #eee;">Delivery to 490036: Delhi is currently not available for this item.<br><a href="#" style="color: #eee;">why?</a></p>
+                <p class="text-center wow animated slideInRight" style="color: #eee;"><a href="#" style="color: #eee;"><img src="https://img.icons8.com/material/40/000000/worldwide-location.png"/>Select delivery location</a></p>
+                <div class="buy-links wow animated slideInLeft">
+                <a href="#" style="color: #eee;"><img src="https://img.icons8.com/ios-glyphs/30/000000/buy.png"/>Buy Now</a> <a href="#" style="color: #eee;background:#ff8080"><img src="https://img.icons8.com/material-rounded/30/000000/dating-website.png"/>Wishlist</a> 
+                <h5 style="color: #eee;padding-top:20px;">selects the quantity</h5><form>
+                  <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value"><img src="https://img.icons8.com/android/24/000000/minus.png"/></div>
+                  <input type="number" id="number" value="0" />
+                  <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value"><img src="https://img.icons8.com/android/24/000000/plus.png"/></div>
+                </form>
+                </div>
+                <h4 class="text-center share-it wow animated rollIn" style="color: #eee;">share: 
+                  <a href="#" style="color: #eee;"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  <a href="#" style="color: #eee;"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <a href="#" style="color: #eee;"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                  <a href="#" style="color: #eee;"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                </h4><br>
+                <div class="text-center sell wow animated bounceIn" style="color: #eee;font-size:20px;font-weight:400;">
+                  have one to sell? <a href="#" style="text-decoration:none;color: #eee;padding:6px 6px;background:#8600b3;border-radius:30px;">sell on our website</a>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+      </section>
+      <script>
+        function increaseValue() {
+          var value = parseInt(document.getElementById('number').value, 10);
+          value = isNaN(value) ? 0 : value;
+          value++;
+          document.getElementById('number').value = value;
+        }
+        
+        function decreaseValue() {
+          var value = parseInt(document.getElementById('number').value, 10);
+          value = isNaN(value) ? 0 : value;
+          value < 1 ? value = 1 : '';
+          value--;
+          document.getElementById('number').value = value;
+        }
+      </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+  </body>
+</html>
